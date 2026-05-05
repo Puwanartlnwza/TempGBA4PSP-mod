@@ -237,7 +237,7 @@
     "[RIGHT]   : %s",
 
     // MSG_PAD_MENU_4
-    "[X]   : %s",
+    "[O]   : %s",
 
     // MSG_PAD_MENU_5
     "[X]   : %s",
