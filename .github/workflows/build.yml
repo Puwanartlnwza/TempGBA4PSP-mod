@@ -7,54 +7,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    container:
+      image: pspdev/pspdev:latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y \
-          git \
-          build-essential \
-          cmake \
-          texinfo \
-          flex \
-          bison \
-          libgmp-dev \
-          libmpfr-dev \
-          libmpc-dev \
-          libusb-dev \
-          libarchive-dev \
-          libgpgme-dev \
-          pkg-config
-
-      - name: Install PSP toolchain
-        run: |
-          git clone https://github.com/pspdev/pspdev.git
-          cd pspdev
-
-          export PSPDEV=/usr/local/pspdev
-          export PATH=$PATH:$PSPDEV/bin
-
-          sudo mkdir -p $PSPDEV
-          sudo chown -R $USER:$USER $PSPDEV
-
-          ./build-all.sh
 
       - name: Build TempGBA
         run: |
-          export PSPDEV=/usr/local/pspdev
-          export PATH=$PATH:$PSPDEV/bin
-
           make clean
           make
 
-      - name: Upload EBOOT
+      - name: Find output
+        run: |
+          find . -name "*.PBP"
+          find . -name "*.pbp"
+
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: TempGBA-build
           path: |
-            EBOOT.PBP
-            *.pbp
+            **/*.PBP
             **/*.pbp
