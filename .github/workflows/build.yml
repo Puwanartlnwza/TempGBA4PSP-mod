@@ -14,29 +14,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build
+      - name: Build TempGBA
         run: |
           cd source
           make clean || true
           make
+          
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TempGBA-build
+          path: |
+            source/**/*.PBP
+            source/**/*.pbp
+            source/**/*.elf
+            source/**/*.prx
 
-      - name: Find output
+      - name: Find build output
         run: |
           find source -iname "*.pbp"
-
-      - name: Create Release Zip
-        run: |
-          mkdir release
-          cp source/*.PBP release/ || true
-          cp source/*.pbp release/ || true
-          cd release
-          zip TempGBA-custom.zip *
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: custom-build-${{ github.run_number }}
-          name: TempGBA Custom Build ${{ github.run_number }}
-          files: release/TempGBA-custom.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          find source -iname "*.elf"
+          find source -iname "*.prx"
