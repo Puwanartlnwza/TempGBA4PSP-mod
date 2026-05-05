@@ -9,7 +9,7 @@
 	"ROM Buffer %2dMB",
 
     // MSG_BROWSER_HELP
-    "[X]:Select  [X]:Menu  [SQUARE]: [UP]",
+    "[X]:Select  [O]:Menu  [SQUARE]: [UP]",
 
     // MSG_MENU_DATE_FMT_0
     "%4d/%2d/%2d %-3s %2d:%02d",
