@@ -16,18 +16,22 @@ jobs:
 
       - name: Build TempGBA
         run: |
-          make clean
+          cd source
+          make clean || true
           make
-
-      - name: Find output
-        run: |
-          find . -name "*.PBP"
-          find . -name "*.pbp"
-
+          
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: TempGBA-build
           path: |
-            **/*.PBP
-            **/*.pbp
+            source/**/*.PBP
+            source/**/*.pbp
+            source/**/*.elf
+            source/**/*.prx
+
+      - name: Find build output
+        run: |
+          find source -iname "*.pbp"
+          find source -iname "*.elf"
+          find source -iname "*.prx"
