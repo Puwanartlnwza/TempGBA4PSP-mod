@@ -40,6 +40,7 @@ VPATH = src src/zlib
 
 CFLAGS = \
  -O2 -G0 \
+ -fcommon \
  -march=allegrex -mfp32 -mgp32 -mlong32 -mabi=eabi \
  -fomit-frame-pointer -fstrict-aliasing \
  -falign-functions=32 -falign-loops -falign-labels -falign-jumps \
