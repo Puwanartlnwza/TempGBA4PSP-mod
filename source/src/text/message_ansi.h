@@ -9,7 +9,7 @@
 	"ROM Buffer %2dMB",
 
     // MSG_BROWSER_HELP
-    "[O]:Select  [X]:Menu  [SQUARE]: [UP]",
+    "[X]:Select  [X]:Menu  [SQUARE]: [UP]",
 
     // MSG_MENU_DATE_FMT_0
     "%4d/%2d/%2d %-3s %2d:%02d",
@@ -60,43 +60,43 @@
     "Exit TempGBA",
 
     // MSG_MAIN_MENU_HELP_0
-    "[O]:Load   [<] [>] :Select slot",
+    "[X]:Load   [<] [>] :Select slot",
 
     // MSG_MAIN_MENU_HELP_1
-    "[O]:Save   [<] [>] :Select slot",
+    "[X]:Save   [<] [>] :Select slot",
 
     // MSG_MAIN_MENU_HELP_2
-    "[O]:Sub menu   [R] :Shortcut key",
+    "[X]:Sub menu   [R] :Shortcut key",
 
     // MSG_MAIN_MENU_HELP_3
-    "[O]:Save Image   [<] [>] :Select image format",
+    "[X]:Save Image   [<] [>] :Select image format",
 
     // MSG_MAIN_MENU_HELP_4
-    "[O]:Sub menu",
+    "[X]:Sub menu",
 
     // MSG_MAIN_MENU_HELP_5
-    "[O]:Sub menu",
+    "[X]:Sub menu",
 
     // MSG_MAIN_MENU_HELP_6
-    "[O]:Sub menu",
+    "[X]:Sub menu",
 
     // MSG_MAIN_MENU_HELP_CHEAT
-    "[O]:Select to manage cheats",
+    "[X]:Select to manage cheats",
 
     // MSG_MAIN_MENU_HELP_7
-    "[O]:File browser   [L] :Shortcut key",
+    "[X]:File browser   [L] :Shortcut key",
 
     // MSG_MAIN_MENU_HELP_8
-    "[O]:Reset game",
+    "[X]:Reset game",
 
     // MSG_MAIN_MENU_HELP_9
-    "[O]:Return to game",
+    "[X]:Return to game",
 
     // MSG_MAIN_MENU_HELP_10
-    "[O]:Sleep mode",
+    "[X]:Sleep mode",
 
     // MSG_MAIN_MENU_HELP_11
-    "[O]:Exit",
+    "[X]:Exit",
 
     // MSG_OPTION_MENU_TITLE
     "Emulator options",
@@ -180,10 +180,10 @@
     "[<] [>] :Select   emulator",
 
     // MSG_OPTION_MENU_HELP_DEFAULT
-    "[O]:Restore default settings",
+    "[X]:Restore default settings",
 
     // MSG_OPTION_MENU_HELP_11
-    "[O]:Main menu",
+    "[X]:Main menu",
 
     // MSG_STATE_MENU_DATE_FMT_0
     "%4d/%2d/%2d %-3s %2d:%02d:%02d",
@@ -213,13 +213,13 @@
     "Back",
 
     // MSG_STATE_MENU_HELP_0
-    "[O]:Execute   [<] [>] :Select",
+    "[X]:Execute   [<] [>] :Select",
 
     // MSG_STATE_MENU_HELP_1
-    "[O]:File browser",
+    "[X]:File browser",
 
     // MSG_STATE_MENU_HELP_2
-    "[O]:Main menu",
+    "[X]:Main menu",
 
     // MSG_PAD_MENU_TITLE
     "Gamepad config",
@@ -237,7 +237,7 @@
     "[RIGHT]   : %s",
 
     // MSG_PAD_MENU_4
-    "[O]   : %s",
+    "[X]   : %s",
 
     // MSG_PAD_MENU_5
     "[X]   : %s",
@@ -267,7 +267,7 @@
     "[<] [>] :Select",
 
     // MSG_PAD_MENU_HELP_1
-    "[O]:Main menu",
+    "[X]:Main menu",
 
     //PADの設定 コンフィグ
 
@@ -362,7 +362,7 @@
     "[<] [>] :Select",
 
     // MSG_A_PAD_MENU_HELP_2
-    "[O]:Main menu",
+    "[X]:Main menu",
 
 	//MSG_CHEAT_MENU_TITLE,
 	"Cheats options",
@@ -386,10 +386,10 @@
     "[<] [>] :Activate/deactivate",
 
 	//MSG_CHEAT_MENU_HELP_1,
-	"[O]:Cheat file browser  [L] :Shortcut key",
+	"[X]:Cheat file browser  [L] :Shortcut key",
 
 	//MSG_CHEAT_MENU_HELP_2,
-	"[O]:Main menu",
+	"[X]:Main menu",
 
 	//MSG_CHEAT_MENU_HELP_3,
     "[<] [>] :Change page",
